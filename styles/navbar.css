@@ -1,0 +1,18 @@
+.nav-bar {
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar button{
+  font-family: 'Montserrat';
+  background-color: inherit;
+  border: none;
+  color: white;
+  font-size: 30px;
+  margin: 30px 30px 30px 30px;
+}
+
+.nav-bar button:hover{
+  color: rgb(130, 152, 233);
+}

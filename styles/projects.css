@@ -36,7 +36,7 @@ html {
 }
 
 .module:hover > h2 {
-  color: rgb(114,137,218);
+  color: rgb(130, 152, 233);
 }
 
 .module-title {
@@ -64,7 +64,7 @@ html {
   border-radius: 5px;
   font-weight: 500;
   letter-spacing: 1px;
-  padding: 6px;
+  padding: 8px 10px 8px 10px;
 }
 
 .complete-tag {
@@ -75,7 +75,7 @@ html {
   border-radius: 5px;
   font-weight: 500;
   letter-spacing: 1px;
-  padding: 6px;
+  padding: 8px 10px 8px 10px;
 }
 
 .tools {
