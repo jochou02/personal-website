@@ -7,16 +7,16 @@
     <script>
       var i = 0;
       var txt = "Hi, I'm John. I'm a software developer from California.  Welcome to my site!";
-      var speed = 70;
+      var speed;
       
       function typeWriter() {
         if (i < txt.length) {
-
           if (i == 13 || i == 55)
             speed = 400;
+          else if (i < 13)
+            speed = 70;
           else
             speed = 30;
-
           if (i < 13) {
             document.getElementById("message1").innerHTML += txt.charAt(i);
           } else if (i < 55) {
