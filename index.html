@@ -6,18 +6,15 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <script>
       var i = 0;
-      var txt = 'Hi, my name is John.Welcome to my site!';
-      var speed = 60;
-      let flag = false;
+      var txt = "Hi, I'm John.I'm a software developer from California. Welcome to my site!";
+      var speed = 70;
       
       function typeWriter() {
         if (i < txt.length) {
-          if (txt.charAt(i) == 'W'){
-            flag = true;
-          }
-          if (flag) 
+          if (i >= 13) {
+            speed = 40;
             document.getElementById("message2").innerHTML += txt.charAt(i);
-          else 
+          } else 
             document.getElementById("message1").innerHTML += txt.charAt(i);
           i++;
           setTimeout(typeWriter, speed);
@@ -43,6 +40,7 @@
     </header>
     <p id="message1"></p>
     <p id="message2"></p>
+    <a id="portfolio-btn" href="/projects.html">Portfolio</a>
     <script>
       typeWriter();
     </script>
