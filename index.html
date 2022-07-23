@@ -1,28 +1,50 @@
 <!DOCTYPE html>
-    <head>
-      <link rel="stylesheet" href="styles/index.css">
-      <link rel="stylesheet" href="styles/navbar.css">
-    </head>
-    <body>
-
-      <div class="background-container">
-        <image class="background-image" src=""></image>
-      </div>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script>
+      var i = 0;
+      var txt = 'Hi, my name is John.Welcome to my site!';
+      var speed = 60;
+      let flag = false;
       
-      <header>
-          <a class="logo-container" href="/">
-            <img class="image" src="images/logo-3.png" alt="logo">
-          </a>
-          <nav>
-              <ul class="links">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Transflux</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-          </nav>
-      </header>
-
-    </body>
+      function typeWriter() {
+        if (i < txt.length) {
+          if (txt.charAt(i) == 'W'){
+            flag = true;
+          }
+          if (flag) 
+            document.getElementById("message2").innerHTML += txt.charAt(i);
+          else 
+            document.getElementById("message1").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      </script>
+  </head>
+  <body>
+    <header>
+      <a class="logo-container" href="/">
+        <img class="logo" src="images/logo-3.png" alt="logo">
+      </a>
+      <nav>
+          <ul class="links">
+              <li><a href="/">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="/projects.html">Portfolio</a></li>
+              <li><a href="#">Transflux</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="placeholder"></div>
+    </header>
+    <p id="message1"></p>
+    <p id="message2"></p>
+    <script>
+      typeWriter();
+    </script>
+  </body>
 </html>

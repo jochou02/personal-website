@@ -14,20 +14,21 @@ html {
 }
 
 body {
-  background-image: url("../images/projects/placeholder.jpg");
+  background-image: url("../images/projects/placeholder.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(43, 43, 43);
   height: 100%
 }
 
-.background-container {
-  height: 100%;
-  overflow: hidden;
+#message1 {
+  margin-top: 150px;
+  font-size: 100px;
+  font-weight: 500;
 }
 
-.background-image {
-  height: 100%;
-  opacity: 0.2;
+#message2 {
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 500;
 }
-  
