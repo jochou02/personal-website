@@ -42,7 +42,7 @@ body {
   font-weight: 500;
 }
 
-#message2 {
+#message2, #message3 {
   margin-top: 20px;
   font-size: 40px;
   font-weight: 500;
