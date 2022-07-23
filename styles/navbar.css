@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 5%;
+  padding: 30px 3%;
 }
 
 .logo-container {
@@ -53,15 +53,4 @@ a {
   color: rgb(130, 152, 233);
 }
 
-.btn {
-  padding: 9px 25px;
-  background-color: rgb(97, 127, 234);
-  border: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease 0s;
-}
-
-.btn:hover {
-  background-color: rgb(130, 152, 233);
-}
 

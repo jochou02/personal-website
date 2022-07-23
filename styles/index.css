@@ -14,6 +14,9 @@ html {
 }
 
 body {
+  background-image: url("../images/projects/placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgb(43, 43, 43);
   height: 100%
 }
