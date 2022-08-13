@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap');
 
-
 body {
   background-color: rgb(43, 43, 43);
 }
@@ -32,7 +31,7 @@ body {
 }
 
 .module:hover > h2 {
-  color: rgb(130, 152, 233);
+  color: #66b3ff;
 }
 
 .module-title {
