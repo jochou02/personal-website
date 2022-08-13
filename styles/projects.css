@@ -100,5 +100,9 @@ body {
   background-color: transparent;
 } 
 
+.vertical-spacer {
+  height: 40px;
+}
+
 
 
