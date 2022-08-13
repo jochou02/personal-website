@@ -4,7 +4,7 @@ body {
 
 hr {
     border: 1px solid grey;
-    width: 65%;
+    width: 1500px;
     margin: 0 auto;
 }
 
@@ -19,30 +19,30 @@ hr {
 .photo-section,
 .text-section {
     position: relative;
-    width: 700px;
-    height: 650px;
+    width: 600px;
+    height: 550px;
 }
 
 .photo-container {
     background-color: transparent;
     position: absolute;
     right: 60px;
-    bottom: 75px;
+    bottom: 60px;
     z-index: 6;
 }
 
 .photo-container img {
     object-fit: cover;
-    width: 450px;
-    height: 450px;
+    width: 375px;
+    height: 375px;
 }
 
 .box {
     position: absolute;
-    height: 450px;
-    width: 450px;
+    height: 375px;
+    width: 375px;
     top: 75px;
-    left: 140px;
+    left: 125px;
     border-style: solid;
     border-width: 10px;
     border-color: #66b3ff;
@@ -58,24 +58,24 @@ hr {
 .categories {
     display: inline-block;
     text-align: right;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 500;
     color: #66b3ff;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .descriptions {
     display: inline-block;
     text-align: left;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 /* Quote Div */
 
 .quote-div {
-    height: 300px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,18 +89,18 @@ hr {
 }
 
 .quote {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 500;
 }
 
 .harvey1 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     padding-top: 10px;
 }
 
 .harvey2 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     color: #66b3ff;
 }
@@ -108,30 +108,30 @@ hr {
 /* Academics Div */
 
 .academic-section {
-    height: 1100px;
+    height: 1000px;
     text-align: left;
     display: flex;
     justify-content: center;
 }
 
 .education-container {
-    width: 700px;
+    width: 600px;
 }
 
 .academic-section h1 {
-    font-size: 50px;
+    font-size: 42px;
     padding: 70px 0px 70px 0px;
 }
 
 .academic-section h2 {
     text-align: left;
     line-height: 2;
-
+    font-size: 22px;
 }
 
 .degree {
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     color: #66b3ff;
     line-height: 2;
     font-style: italic;
@@ -144,7 +144,7 @@ hr {
 
 .school li {
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 2;
 }
@@ -171,7 +171,7 @@ hr {
 }
 
 .contact-section h1 {
-    font-size: 50px;
+    font-size: 42px;
     padding: 70px 0px 70px 0px;
 }
 
@@ -191,7 +191,7 @@ hr {
 
 .platforms {
     text-align: right;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 500;
     color: #66b3ff;
     line-height: 50px;
@@ -199,7 +199,7 @@ hr {
 
 .handles {
     text-align: left;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 50px;
 }

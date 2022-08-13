@@ -31,6 +31,8 @@ html {
   right: 0;
   top: 225px;
   font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 7px;
 }
 
 header {
@@ -90,11 +92,6 @@ a {
   position: relative;
 }
 
-.banner h1 {
-  font-size: 80px;
-  font-weight: 500;
-  letter-spacing: 7px;
-}
 
 
 
