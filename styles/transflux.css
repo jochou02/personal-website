@@ -8,8 +8,39 @@ hr {
     margin: 0 auto;
 }
 
-.section {
-    ;
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.tf-logo-container {
+    width: 220px;
+    margin: 20px 0px;
+    display: inline-block;
+}
+
+.tf-logo {
+    width: 80%;
+}
+
+.desc-container {
+    width: 900px;
+    display: inline-block;
+}
+
+.desc-title {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.8px;
+}
+
+.desc-stats {
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.8px;
+    margin-top: 30px;
 }
 
 .section h1 {
