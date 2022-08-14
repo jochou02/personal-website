@@ -2,3 +2,72 @@ body {
     background-color: rgb(43, 43, 43);
 }
 
+hr {
+    border: 1px solid grey;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.section {
+    ;
+}
+
+.section h1 {
+    padding: 50px 0px 10px 0px;
+    font-size: 40px;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.images-container {
+    height: 350px;
+    font-size: 0;
+    margin: 40px 0px 10px 0px;
+}
+
+.images-container2 {
+    height: 275px;
+    font-size: 0;
+    margin: 40px 0px 10px 0px;
+}
+
+.images {
+    height: 100%;
+}
+
+.info-container {
+    display: flex;
+    justify-content: left;
+    margin: 30px auto 15px auto;
+    text-align: center;
+}
+
+.info-container p {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+.blue {
+    color: #66b3ff;
+}
+
+.ks-button {
+    background-color: transparent;
+    color: white;
+    padding: 18px 50px;
+    margin: 0px 0px 50px 0px;
+    border-color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-style: solid;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.ks-button:hover {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.3);
+}
