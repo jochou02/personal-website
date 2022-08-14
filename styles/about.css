@@ -108,7 +108,7 @@ hr {
 /* Academics Div */
 
 .academic-section {
-    height: 1000px;
+    
     text-align: left;
     display: flex;
     justify-content: center;
@@ -116,6 +116,7 @@ hr {
 
 .education-container {
     width: 600px;
+    margin: 0px 50px 70px 50px;
 }
 
 .academic-section h1 {
@@ -157,17 +158,13 @@ hr {
     height: 50px;
 }
 
-.academic-placeholder {
-    width: 100px;
-}
-
 /* Contact Div */
 
 .contact-section {
-    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 .contact-section h1 {
@@ -204,3 +201,57 @@ hr {
     line-height: 50px;
 }
 
+
+@media screen and (max-width: 1400px) {
+    
+    /* About Div */
+    .box{
+        display: none;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .photo-container {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 80px;
+    }
+
+    .photo-section {
+        height: 450px;
+    }
+
+    .text-section {
+        height: 250px;
+        margin: 50px 0px;
+    }
+
+    .categories,
+    .descriptions {
+        font-size: 18px;
+    }
+    
+    /* Quote Div */
+    .quotations {
+        font-size: 26px;
+    }
+
+    .quote {
+        margin: 0px 40px;
+    }
+
+    /* Academics Div */
+    .academic-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-container {
+        width: 80%;
+        margin: 0px 50px 70px 50px;
+    }
+}
