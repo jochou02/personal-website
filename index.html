@@ -2,59 +2,44 @@
 <html>
   <head>
     <title>Home</title>
-    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/navbar.css">
-    <script>
-      var i = 0;
-      var txt = "Hi, I'm John. I'm a software developer from California.  Welcome to my site!";
-      var speed;
-      
-      function typeWriter() {
-        if (i < txt.length) {
-          if (i == 13 || i == 55)
-            speed = 400;
-          else if (i < 13)
-            speed = 70;
-          else
-            speed = 30;
-          if (i < 13) {
-            document.getElementById("message1").innerHTML += txt.charAt(i);
-          } else if (i < 55) {
-            document.getElementById("message2").innerHTML += txt.charAt(i);
-          } else
-            document.getElementById("message3").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
-      </script>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js"></script>
   </head>
   <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo-container" href="/">
+          <a><img class="logo" src="images/logo-3.png" alt="logo"></a>
+        </div>
 
-    <header>
-      <div class="logo-container" href="/">
-        <a><img class="logo" src="images/logo-3.png" alt="logo"></a>
-      </div>
-      <nav>
-          <ul class="links">
-              <li><a href="/" style="color: #66b3ff;">Home</a></li>
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/projects.html">Portfolio</a></li>
-              <li><a href="/transflux.html">Transflux</a></li>
-              <li><a href="/about.html#contact-section">Contact</a></li>
-          </ul>
-      </nav>
-      <div class="placeholder"></div>
-    </header>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
 
-    <p id="message1"></p>
-    <p id="message2"></p>
-    <p id="message3"></p>
-    <a id="portfolio-btn" href="/projects.html">Portfolio</a>
+        <nav class="navbar-links">
+            <ul class="links">
+                <li><a href="/" style="color: #66b3ff;">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/projects.html">Portfolio</a></li>
+                <li><a href="/transflux.html">Transflux</a></li>
+                <li><a href="/about.html#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="placeholder"></div>
+      </header>
 
-    <script>
-      typeWriter();
-    </script>
+      <p id="message1" class="index-messages"></p>
+      <p id="message2" class="index-messages"></p>
+      <p id="message3" class="index-messages"></p>
+      <a id="portfolio-btn" href="/projects.html">Portfolio</a>
 
+      <script src="scripts/indexNavBar.js"></script>
+      <script>
+        typeWriter();
+      </script>
+    </div>
   </body>
 </html>
