@@ -50,12 +50,11 @@ header {
 .logo-container {
   background-color: transparent;
   cursor: pointer;
-  width: 220px;
 }
 
 .logo {
   background-color: transparent;
-  width: 100%;
+  width: 180px;
   margin-top: 30px;
 }
 
@@ -85,7 +84,7 @@ a {
 }
 
 .placeholder {
-  width: 220px;
+  width: 180px;
 }
 
 .banner {
