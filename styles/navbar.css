@@ -33,6 +33,7 @@ html {
   font-size: 70px;
   font-weight: 500;
   letter-spacing: 7px;
+  margin: 0px 16px;
 }
 
 header {
@@ -125,6 +126,7 @@ li a {
 
   .title {
     top: 250px;
+    font-size: 60px;
   }
 
   li a {
@@ -162,6 +164,11 @@ li a {
 
   .links li {
     padding: 8px 0px;
+  }
+
+  .title {
+    top: 220px;
+    font-size: 50px;
   }
 
   .title.active {
