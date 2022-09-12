@@ -50,6 +50,10 @@ body {
   height: 300px;
 }
 
+.image2 {
+  object-fit: cover;  
+  width: 100%;
+}
 .progress-tag {
   background-color: rgb(21, 116, 204);
   position: absolute;
