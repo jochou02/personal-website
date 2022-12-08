@@ -1,0 +1,8 @@
+@import "constants.css";
+@import "global.css";
+
+html {
+  font-family: 'Prompt', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
