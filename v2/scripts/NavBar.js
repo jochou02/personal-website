@@ -17,6 +17,14 @@ class NavBar extends HTMLElement {
     anchorElement.appendChild(imageElement);
     sectionElementLeft.appendChild(anchorElement);
 
+    // Hamburger Menu
+    let hamAnchorElement = document.createElement('a');
+    hamAnchorElement.className = 'ham-button';
+    for (let i = 0; i < 3; i++) {
+      let spanElement = document.createElement('span');
+      hamAnchorElement.appendChild(spanElement);
+    }
+
     // Centered Nav Links
     let divElement = document.createElement('div');
     let ulElement = document.createElement('ul');
@@ -40,6 +48,7 @@ class NavBar extends HTMLElement {
 
     // Append three sections to nav container
     navElement.appendChild(sectionElementLeft);
+    navElement.appendChild(hamAnchorElement);
     navElement.appendChild(divElement);
     navElement.appendChild(sectionElementRight);
 
@@ -47,6 +56,8 @@ class NavBar extends HTMLElement {
     let styleElement = document.createElement('style');
 
     styleElement.textContent = `
+    /* Main Styles */
+    
     * {
       box-sizing: border-box;
       margin: 0;
@@ -93,6 +104,52 @@ class NavBar extends HTMLElement {
     }
     li a:hover {
       text-decoration: underline white solid 2px;
+    }
+    
+    /* Hamburger Menu */
+
+    .ham-button {
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50px;
+      height: 35px;
+    }
+    span {
+      height: 4px;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    /* Media Query */
+    
+    @media (max-width: 1300px) {
+      .ham-button {
+        display: flex;
+      }
+      div {
+        display: none;
+        width: 100%;
+        z-index: 10;
+      }
+      div.active {
+        display: flex;
+      }
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      ul {
+        width: 100%;
+        flex-direction: column;
+      }
+      li {
+        padding: 8px 0px;
+      }
     }`;
 
     // Append style and nav container to the Shadow DOM
