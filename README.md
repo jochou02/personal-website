@@ -1,0 +1,3 @@
+# This is my personal website that I originally created Summer of 2022 when I was learning web developement. The first version of my site was last edited Sept 12, 2022.
+
+I have since started building my website again from scratch, implementing proper use of web dev conventions that I have since learned. It is still a work in progress ...
