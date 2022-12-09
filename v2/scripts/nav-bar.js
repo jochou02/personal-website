@@ -120,6 +120,9 @@ class NavBar extends HTMLElement {
     li a:hover {
       text-decoration: underline white solid 2px;
     }
+    aside ul li a {
+      font-size: 40px;
+    }
     
     /* Hamburger Menu */
 
@@ -141,7 +144,6 @@ class NavBar extends HTMLElement {
       background-color: white;
       border-radius: 10px;
     }
-
     aside {
       background-color: black;
       position: absolute;
@@ -149,7 +151,7 @@ class NavBar extends HTMLElement {
       height: 100%;
       right: 0;
       top: 0;
-      opacity: 0.7;
+      opacity: 0.8;
       display: none;
       padding-top: 150px;
     }
