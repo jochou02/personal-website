@@ -19,18 +19,37 @@ class NavBar extends HTMLElement {
 
     // Hamburger Menu
     let hamAnchorElement = document.createElement('a');
-    hamAnchorElement.className = 'ham-button';
+    hamAnchorElement.id = 'ham-button';
     for (let i = 0; i < 3; i++) {
       let spanElement = document.createElement('span');
       hamAnchorElement.appendChild(spanElement);
     }
+    
+    // Hamburger Menu Pop Up
+    let asideElement = document.createElement('aside');
+    hamAnchorElement.addEventListener('click', () => {
+      asideElement.classList.toggle('active')
+    });
+
+    let verticalUlElement = document.createElement('ul');
+
+    let links = ['/', '/about.html', '/projects.html', '/transflux.html', '/about.html#contact-section'];
+    let pageNames = ['Home', 'About', 'Portfolio', 'Transflux', 'Contact'];
+
+    for (let i = 0; i < links.length; i++) {
+      let tempLiElement = document.createElement('li');
+      let tempAElement = document.createElement('a');
+      tempAElement.href = links[i];
+      tempAElement.text = pageNames[i];
+      tempLiElement.appendChild(tempAElement);
+      verticalUlElement.appendChild(tempLiElement)
+    }
+
+    asideElement.appendChild(verticalUlElement);
 
     // Centered Nav Links
     let divElement = document.createElement('div');
     let ulElement = document.createElement('ul');
-
-    let links = ['/', '/about.html', '/projects.html', '/transflux.html', '/about.html#contact-section'];
-    let pageNames = ['Home', 'About', 'Portfolio', 'Transflux', 'Contact'];
 
     for (let i = 0; i < links.length; i++) {
       let tempLiElement = document.createElement('li');
@@ -104,7 +123,7 @@ class NavBar extends HTMLElement {
     
     /* Hamburger Menu */
 
-    .ham-button {
+    #ham-button {
       position: absolute;
       top: 4rem;
       right: 4rem;
@@ -113,6 +132,8 @@ class NavBar extends HTMLElement {
       justify-content: space-between;
       width: 50px;
       height: 35px;
+      cursor: pointer;
+      z-index: 100;
     }
     span {
       height: 4px;
@@ -121,10 +142,26 @@ class NavBar extends HTMLElement {
       border-radius: 10px;
     }
 
+    aside {
+      background-color: black;
+      position: absolute;
+      width: 300px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      opacity: 0.7;
+      display: none;
+      padding-top: 150px;
+    }
+    
+    aside.active {
+      display: block;
+    }
+
     /* Media Query */
     
     @media (max-width: 1200px) {
-      .ham-button {
+      #ham-button {
         display: flex;
       }
       div {
@@ -149,7 +186,7 @@ class NavBar extends HTMLElement {
     }`;
 
     // Append style and nav container to the Shadow DOM
-    this.shadowRoot.append(navElement, styleElement);
+    this.shadowRoot.append(navElement, asideElement, styleElement);
   }
 }
 
