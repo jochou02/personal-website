@@ -43,14 +43,10 @@ class NavBar extends HTMLElement {
 
     divElement.appendChild(ulElement);
 
-    // Right <section> element for placeholder 
-    let sectionElementRight = document.createElement('section');
-
-    // Append three sections to nav container
+    // Append sections to nav container
     navElement.appendChild(sectionElementLeft);
     navElement.appendChild(hamAnchorElement);
     navElement.appendChild(divElement);
-    navElement.appendChild(sectionElementRight);
 
     // Styles
     let styleElement = document.createElement('style');
@@ -80,7 +76,7 @@ class NavBar extends HTMLElement {
       padding: 10px 3%;  
     }
     section {
-      width: 180px;
+      width: 150px;
     }
     img {
       width: 100%;
@@ -127,7 +123,7 @@ class NavBar extends HTMLElement {
 
     /* Media Query */
     
-    @media (max-width: 1300px) {
+    @media (max-width: 1200px) {
       .ham-button {
         display: flex;
       }
