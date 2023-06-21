@@ -1,0 +1,257 @@
+body {
+    background-color: rgb(43, 43, 43);
+}
+
+hr {
+    border: 1px solid grey;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* About Div */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-section,
+.text-section {
+    position: relative;
+    width: 600px;
+    height: 550px;
+}
+
+.photo-container {
+    background-color: transparent;
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    z-index: 6;
+}
+
+.photo-container img {
+    object-fit: cover;
+    width: 375px;
+    height: 375px;
+}
+
+.box {
+    position: absolute;
+    height: 375px;
+    width: 375px;
+    top: 75px;
+    left: 125px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #66b3ff;
+    z-index: 5;
+}
+
+.text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories {
+    display: inline-block;
+    text-align: right;
+    font-size: 22px;
+    font-weight: 500;
+    color: #66b3ff;
+    line-height: 40px;
+}
+
+.descriptions {
+    display: inline-block;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/* Quote Div */
+
+.quote-div {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quotations {
+    font-size: 50px;
+    font-weight: 500;
+    color: #66b3ff;
+}
+
+.quote {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.harvey1 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.harvey2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #66b3ff;
+}
+
+/* Academics Div */
+
+.academic-section {
+    
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.education-container {
+    width: 600px;
+    margin: 0px 50px 70px 50px;
+}
+
+.academic-section h1 {
+    font-size: 42px;
+    padding: 70px 0px 70px 0px;
+}
+
+.academic-section h2 {
+    text-align: left;
+    line-height: 2;
+    font-size: 22px;
+}
+
+.degree {
+    text-align: left;
+    font-size: 16px;
+    color: #66b3ff;
+    line-height: 2;
+    font-style: italic;
+}
+
+.school {
+    list-style: square;
+    list-style-position: inside;
+}
+
+.school li {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.school li span {
+    font-weight: 700;
+}
+
+.vertical-placeholder {
+    height: 50px;
+}
+
+/* Contact Div */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.contact-section h1 {
+    font-size: 42px;
+    padding: 70px 0px 70px 0px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platforms-div {
+    float: right;
+}
+
+.handles-div {
+    float: left;
+}
+
+.platforms {
+    text-align: right;
+    font-size: 22px;
+    font-weight: 500;
+    color: #66b3ff;
+    line-height: 50px;
+}
+
+.handles {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+
+@media (max-width: 1400px) {
+    
+    /* About Div */
+    .box{
+        display: none;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .photo-container {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 80px;
+    }
+
+    .photo-section {
+        height: 450px;
+    }
+
+    .text-section {
+        height: 250px;
+        margin: 50px 0px;
+    }
+
+    .categories,
+    .descriptions {
+        font-size: 18px;
+    }
+    
+    /* Quote Div */
+    .quotations {
+        font-size: 26px;
+    }
+
+    .quote {
+        margin: 0px 40px;
+    }
+
+    /* Academics Div */
+    .academic-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-container {
+        width: 80%;
+        margin: 0px 50px 70px 50px;
+    }
+}
