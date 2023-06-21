@@ -2,44 +2,43 @@
 <html>
   <head>
     <title>Home</title>
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/index.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <!-- Type Writer Feature -->
+    <script src="../scripts/typewriter.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="logo-container" href="/">
-          <a><img class="logo" src="images/logo-3.png" alt="logo"></a>
+
+      <nav class="navbar">
+        <section class="navbar-logo">
+          <a href="/"><img src="../assets/logo-3.png" alt="logo" /></a>
+        </section>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/transflux.html">Transflux</a></li>
+            <li><a href="/about.html#contact-section">Contact</a></li>
+          </ul>
         </div>
-
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-
-        <nav class="navbar-links">
-            <ul class="links">
-                <li><a href="/" style="color: #66b3ff;">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/projects.html">Portfolio</a></li>
-                <li><a href="/transflux.html">Transflux</a></li>
-                <li><a href="/about.html#contact-section">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="placeholder"></div>
-      </header>
-
-      <p id="message1" class="index-messages"></p>
+      </nav>
+      
+      <p id="message1" class="index-messages">Hi, I'm John.</p>
       <p id="message2" class="index-messages"></p>
       <p id="message3" class="index-messages"></p>
-      <a id="portfolio-btn" href="/projects.html">Portfolio</a>
+      <div class="portfolio-container">
+        <a href="/projects.html">
+          <p>Portfolio</p>
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
 
-      <script src="scripts/indexNavBar.js"></script>
-      <script>
-        typeWriter();
-      </script>
     </div>
   </body>
 </html>
