@@ -1,121 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
-* {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #f9f9f9;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.project-card {
-    background-color: #fff;
-    width: 350px;
-    margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-}
-
-.image-container {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    transition: all 0.3s ease;
-}
-
-.project-card:hover .project-image {
-    transform: scale(1.1);
-}
-
-.content {
-    padding: 15px;
-    text-align: center;
-}
-
-h4 {
-    margin-top: 5px;
-    color: #333;
-}
-
-p {
-    color: #666;
-}
-
-.read-more-btn {
-    display: inline-block;
-    margin-top: 15px;
-    border: none;
-    color: #fff;
-    background-color: #6c63ff;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-}
-
-.read-more-btn:hover {
-    background-color: #4b49ac;
-}
-
-</style>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+        .contact-wrapper {
+            width: 60%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+        .contact-item i {
+            margin-right: 10px;
+            color: #0077B5;
+            font-size: 24px;
+        }
+        .contact-item a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-
-<h2 style="text-align:center;">My Projects</h2>
-
-<div class="container">
-
-    <div class="project-card">
-        <div class="image-container">
-            <img src="project1.jpg" alt="Project 1" class="project-image">
+    <div class="contact-wrapper">
+        <h2>Contact Me</h2>
+        <p>Feel free to connect with me through the following channels:</p>
+        <div class="contact-item">
+            <i class="fa fa-linkedin"></i>
+            <a href="yourLinkedInURL" target="_blank">Connect with me on LinkedIn</a>
         </div>
-        <div class="content">
-            <h4><b>Project 1</b></h4>
-            <p>A brief description of Project 1...</p>
-            <a href="project1.html" class="read-more-btn">Read More</a>
+        <div class="contact-item">
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:yourEmailAddress">Send me an email</a>
         </div>
-    </div>
-
-    <div class="project-card">
-        <div class="image-container">
-            <img src="project2.jpg" alt="Project 2" class="project-image">
-        </div>
-        <div class="content">
-            <h4><b>Project 2</b></h4>
-            <p>A brief description of Project 2...</p>
-            <a href="project2.html" class="read-more-btn">Read More</a>
+        <div class="contact-item">
+            <i class="fa fa-github"></i>
+            <a href="yourGithubURL" target="_blank">Check out my GitHub profile</a>
         </div>
     </div>
-
-    <!-- Add more project cards as needed -->
-
-</div>
-
 </body>
-</html> 
+</html>
