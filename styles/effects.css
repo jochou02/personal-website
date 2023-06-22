@@ -8,7 +8,7 @@
 }
 
 h1.glitch {
-    font-size: 80px;
+    font-size: calc(40px + 2vw);
     position: relative;
     color: #ffffff;
     margin: 0 auto;
@@ -94,7 +94,6 @@ h1.glitch::after {
   transform: rotate(270deg);
   cursor: pointer;
   margin-left: 20px;
-  margin-right: 100px;
 }
 
 .arrow span {

@@ -69,12 +69,14 @@ body {
 #funFacts h2 {
     font-weight: 200;
     padding-bottom: 10px;
+    font-size: 28px;
 }
 
 #funFacts ul {
     list-style: none;
     padding: 0;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 
 #funFacts ul li:before {
@@ -98,7 +100,7 @@ body {
 }
 
 .education-container {
-    width: 1000px;
+    width: 1100px;
     margin: 80px 0px 0px 0px;
 }
 
@@ -133,7 +135,7 @@ body {
 
 .school li {
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 2;
     letter-spacing: 0.8px;
@@ -189,55 +191,22 @@ i {
 /*********************************************************************************************/
 
 @media (max-width: 1400px) {
-    
+
     /* About Div */
-    .box{
-        display: none;
-    }
-
-    .about-section {
-        flex-direction: column;
-    }
-
-    .photo-container {
-        position: relative;
-        left: 0px;
-        right: 0px;
-        top: 80px;
-    }
-
-    .photo-section {
-        height: 450px;
-    }
-
-    .text-section {
-        height: 250px;
-        margin: 50px 0px;
-    }
-
-    .categories,
-    .descriptions {
-        font-size: 18px;
+    #funFacts h2 {
+        font-size: 24px;
     }
     
-    /* Quote Div */
-    .quotations {
-        font-size: 26px;
-    }
-
-    .quote {
-        margin: 0px 40px;
+    #funFacts ul {
+        font-size: 18px;
     }
 
     /* Academics Div */
-    .academic-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .education-container {
         width: 80%;
-        margin: 0px 50px 70px 50px;
+    }
+
+    .school li {
+        font-size: 15px;;
     }
 }

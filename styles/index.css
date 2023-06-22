@@ -22,9 +22,15 @@
   overflow: hidden;
 }
 
+.index-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #message1 {
-  margin-top: 230px;
-  font-size: 100px;
+  font-size: calc(45px + 2.5vw);
   font-weight: 300;
   letter-spacing: 2px;
   opacity: 0;
@@ -38,8 +44,9 @@
 
 #message2, #message3 {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: calc(20px + 1vw);
   font-weight: 200;
+  min-width: 900px;
 }
 
 .portfolio-container {
@@ -57,9 +64,16 @@
 }
 
 .portfolio-container p {
-  font-size: 27px;
+  font-size: calc(20px + 0.5vw);
   letter-spacing: 3px;
 }
 
+
+
+@media screen and (max-width: 600px) {
+  #message2, #message3 {
+    min-width: 400px;
+  }
+}
 
 
