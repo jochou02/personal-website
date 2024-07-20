@@ -1,17 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --background-dark: rgb(19, 30, 44);
+    --background-dark-hover: rgb(30, 42, 59);
+
+    --subtle-grey: rgb(120, 120, 120);
+
+    --blue: rgb(143, 210, 255);
+    --green: rgb(136, 252, 223);
+    
+    --font-size-nav: 1.4vw;
+    --font-size-h2: calc(var(--font-size-nav) * 1.35);
+    --font-size-h3: calc(var(--font-size-nav) * 0.9);
+    --font-size-p: calc(var(--font-size-nav) * 0.75);
+    --font-size-quote: calc(var(--font-size-nav) * 1.1);
+    --font-size-footer: calc(var(--font-size-nav) * 0.6);
+}
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
 }
 
 html {
-  font-family: 'Prompt', sans-serif;
-  font-weight: 100;
-  color: white;
-  scroll-behavior: smooth;
+    color: white;
+    scroll-behavior: smooth;
+    font-weight: 100;
 }
 
 h1, h2, h3, h4 {
@@ -29,8 +47,8 @@ a {
 }
 
 body {
-  background-color: rgb(19, 30, 44);
-  height: 100vh;
+    background-color: var(--background-dark);
+    height: 100vh;
 }
 
 ul {
@@ -187,9 +205,9 @@ nav {
     position: sticky;
     top: 0;
     height: 100vh;
-    width: 15%;
+    width: 15vw;
     position: -webkit-sticky;
-    font-size: 1.5vw;
+    font-size: var(--font-size-nav);
 }
 
 nav ul {
@@ -222,7 +240,7 @@ nav ul li a:hover::before {
 }
 
 nav div {
-    width: 10vw;
+    width: 8vw;
     margin: 15vh 0 4vh 0;
 }
 
@@ -243,7 +261,7 @@ nav section a {
 /******************************************************/
 
 aside {
-    width: 55%;
+    width: 50vw;
     margin-top: 15vh;
 }
 
@@ -252,21 +270,45 @@ aside * {
 }
 
 aside h2 {
-    font-size: 35px;
+    font-size: var(--font-size-h2);
+    display: inline-block;
+}
+
+aside h2::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--subtle-grey);
 }
 
 aside h3 {
-    font-size: 20px;
+    font-size: var(--font-size-h3);
+}
+
+aside p, aside li, aside h4 {
+    font-size: var(--font-size-p);
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+aside li {
+    font-size: var(--font-size-p);
+    line-height: 1.25;
+    margin-bottom: 20px;
 }
 
 aside .quote {
-    font-family: "Caveat", cursive;
+    font-family: "Indie Flower", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
-    color: rgb(136, 252, 223);
+    font-size: var(--font-size-quote);
+    color: var(--green);
     line-height: 1.5;
+    margin-bottom: 0;
 }
 
 /******************************************************/
@@ -289,18 +331,78 @@ aside .quote {
 }
 
 #about h4 {
-    color:rgb(121, 215, 255);
+    color: var(--blue);
 }
 
 /******************************************************/
 /******************************************************/
 
-#experience h3 {
-    padding-top: 50px;
+#experience {
+    height: 75vh;
+}
+
+#experience h4 {
+    color: rgb(183, 183, 183);
+    font-weight: 100;
+    font-style: italic;
 }
 
 #experience span {
-    color: rgb(121, 215, 255);
+    color: var(--blue);
+}
+
+#experience-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#experience-tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+#experience-tabs button {
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    border: none;
+    border-left: 2px solid var(--subtle-grey);
+    margin: 0;
+    padding: 10px 20px;
+    font-size: var(--font-size-p);
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+}
+
+#experience-tabs button:hover {
+    background-color: var(--background-dark-hover);
+    color: var(--blue);
+}
+
+#experience .button-active {
+    border-left: 2px solid var(--blue);
+    color: var(--blue);
+}
+
+#experience .tab-content {
+    display: none;
+}
+
+#experience .tab-content.active {
+    display: block;
+}
+
+#experience-description {
+    flex-grow: 1;
+    margin: 0 25px;
+}
+
+#experience-description ul {
+    list-style-type: square;
 }
 
 /*********************************************************************************************/
@@ -309,5 +411,9 @@ aside .quote {
 footer {
     margin-bottom: 15vh; 
     text-align: center; 
-    font-size: 12px;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: var(--font-size-footer);
 }
